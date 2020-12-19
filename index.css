@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+    /* display: flex; */
+    font-size: larger;
+    color: white;
+    background-color: black;
+}
+.services {
+    width: 700px;
+    height: 300px;
+    background: url();
+}
+.heading {
+    width: 700px;
+    height: 500px;
+    background: url(./Delani.jpg) cover;
+}
