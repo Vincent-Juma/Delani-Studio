@@ -4,6 +4,12 @@ $(document).ready(function() {
       $("img").show();
     });
   });
+  $(document).ready(function() {
+    $("p").click(function() {
+      $("./img/logo.png").toggle();
+      $("/img/logo.png").toggle();
+    });
+  });
  $(document).ready(function(){
     $("#p1").hover(function(){
       alert("You entered p1!");

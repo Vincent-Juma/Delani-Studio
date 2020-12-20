@@ -3,6 +3,10 @@ body {
     font-size: larger;
     color: white;
 }
+img {
+    display: none;
+  }
+  
 #services {
     text-align: center;
     background: url("/img/s_image.jpg");
