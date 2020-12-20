@@ -6,7 +6,7 @@ body {
 #services {
     text-align: center;
     float: center;
-    background: url(/"img/s_image.jpg");
+    background: url("/img/s_image.jpg");
     color: black;
 }
 #about {
@@ -17,21 +17,31 @@ body {
     text-align: center;
     float: center;
     width: 960px;
-    height: 700px;
+    height: 500px;
 }
 #welcome>img {
     width: 50px;
     height: 30px;
 }
-}
 #comments {
     background-image: url("/img/c_image.jpg");
+    color: white;
+    width: 960px;
+    height: 500px;
+    display: inline-flex;
 }
 #design {
     color: black;
     width: 960px;
-    height: 400px;
-    padding-left: 70px;
+    height: 500px;
+    display: inline-flex;
+}
+#design>img {
+    width: 80px;
+    height: 60px;
+}
+#do {
+    color: black;
 }
 img {
     width: 300px;
