@@ -1,6 +1,4 @@
-$(Document).ready(function(){
-
-});
+$(Document).ready(function() {
 $(document).ready(function() {
     $("p").click(function() {
       $("img").show();
@@ -38,3 +36,4 @@ function clearFieldFirstTime(element)
       element.value = '';
    }
 }
+});
