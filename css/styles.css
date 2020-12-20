@@ -19,6 +19,9 @@ body {
 #comments {
     background-image: url("/img/c_image.jpg");
 }
+#design {
+    color: black;
+}
 img {
     width: 300px;
     height: 200px;
