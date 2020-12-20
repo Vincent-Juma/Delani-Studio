@@ -1,20 +1,23 @@
 body {
     text-align: center;
-    /* display: flex; */
     font-size: larger;
-    background: url(./jQuery/darkimg.jpg);
+    color: white;
 }
-.services {
-    width: 700px;
-    height: 300px;
-    background: url();
-}
-.heading {
-    width: 700px;
-    height: 500px;
-    background: url(./Delani.jpg) cover;
+#services {
     text-align: center;
     float: center;
+    background: url(/"img/s_image.jpg");
+}
+#about {
+    color: black;
+}
+#welcome {
+    background: url("/img/h_img.jpg");
+    text-align: center;
+    float: center;
+}
+#comments {
+    background-image: url("/img/c_image.jpg");
 }
 img {
     width: 300px;

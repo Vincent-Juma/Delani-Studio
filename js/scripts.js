@@ -38,4 +38,3 @@ function clearFieldFirstTime(element)
       element.value = '';
    }
 }
-});
