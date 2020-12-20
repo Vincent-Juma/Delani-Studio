@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Delani Studio</title>
 </head>
 <body> 
 
     <h1>WELCOME TO DELANI STUDIO</h1>
         <p>AMAZING PEOPLE ARE MAKING AMAZING DESIGNS IN A FUN ENVIRONMENT</p>
-        <img src="./Delani.jpg">
     <h1>ABOUT US</h1>
         <p id="p1">When you work with us, you are part of a team of committed collaborators
         all aspects of our software development process are integrated, interactive and agile.
@@ -43,26 +42,31 @@
      <br>
 
      <h1>CONTACT US</h1>
-        <form>
-            <div class="form-row">
-            <div class="col-md-4 mb-3">
-                <label for="validationDefault01">First name</label>
-                <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="Vincent" required>
-            </div>
-            <div class="col-md-4 mb-3">
-                <label for="validationDefault02">Last name</label>
-                <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="Juma" required>
-            </div>
-            <div class="form-group">
-            <label for="exampleFormControlInput1">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="vincentjuma64@gmail.com">
-            </div>
-            <div class="form-group">
-            <label for="exampleFormControlTextarea1">Comments</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <button class="btn btn-primary" type="submit">Submit form</button>        
-        </form>
+
+        <form id="register_complaint" action="#">
+
+            Full Name: <input type="text" size="30" maxlength="155" name="name" />
+            
+            Email Id: <input type="text" size="30" maxlength="155" name="email" />
+            
+            Comments: <textarea name="service_complaint" rows="7" cols="50"></textarea>
+            
+            <input type="button" name="submit" value="Submit Complaint" onclick="showElements(this.form);" />
+            
+            </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
 </body>
