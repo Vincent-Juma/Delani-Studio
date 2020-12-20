@@ -17,7 +17,11 @@ body {
     text-align: center;
     float: center;
     width: 960px;
-    height: 400px;
+    height: 700px;
+}
+#welcome>img {
+    width: 50px;
+    height: 30px;
 }
 }
 #comments {
