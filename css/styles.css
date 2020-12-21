@@ -66,4 +66,7 @@ img {
 }
 .design {
     color: black;
+    width: 1000px;
+    height: max-content;
+    margin-left: 260px;
 }
