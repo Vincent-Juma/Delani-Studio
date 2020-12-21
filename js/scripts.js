@@ -1,7 +1,7 @@
 $(Document).ready(function() {
 $(document).ready(function() {
     $("p").click(function() {
-      $("img").show();
+      $("logo.png").show();
     });
   });
   $(document).ready(function() {
@@ -46,6 +46,71 @@ $(document).ready(function(){
   $(".div").hover(function() {
   $( '.img-class' ).attr("src","work1");
   }, function() {
-    alert("this is a new idea")
+    display: show;
   });
+$(document).ready(function(){
+  $(".div").hover(function() {
+  $( '.img-class' ).attr("src","work2");
+  }, function() {
+    display: show;
+  });
+$(document).ready(function(){
+(".div").hover(function() {
+$( '.img-class' ).attr("src","work3");
+}, function() {
+      display: show;
 });
+$(document).ready(function(){
+$(".div").hover(function() {
+$( '.img-class' ).attr("src","work4");
+}, function() {
+display: show;
+});
+$(document).ready(function(){
+$(".div").hover(function() {
+$( '.img-class' ).attr("src","work5");
+}, function() {
+display: show;
+});
+$(document).ready(function(){
+$(".div").hover(function() {
+$( '.img-class' ).attr("src","work6");
+}, function() {
+display: show;
+});
+$(document).ready(function(){
+$(".div").hover(function() {
+$( '.img-class' ).attr("src","work7");
+}, function() {
+display: show;
+});
+$(document).ready(function(){
+$(".div").hover(function() {
+$( '.img-class' ).attr("src","work8");
+}, function() {
+    display: show;
+    function register() 
+ {
+     if(document.getElementById("name").value<="" || document.getElementById("name").value)
+     {
+         document.getElementById("nameerror").innerHTML = "Enter a valid name!";
+     }
+     else
+     {
+         DD = document.getElementById("name").value;
+         document.getElementById("nameerror").innerHTML = "";
+ 
+         if(document.getElementById("E-mail").value<1 || document.getElementById("E-mail").value>12)
+         {
+             document.getElementById("E-mailerror").innerHTML = "Enter a valid E-mail!";
+         }
+         else
+         {
+             document.getElementById("E-mailerror").innerHTML = "";
+             document.getElementById("display").innerHTML = "";
+ 
+ 
+             E-mail = document.getElementById("E-mail").value();
+             comments= document.getElementById("comments").value;
+});
+})})})})})})})})});              
