@@ -42,4 +42,10 @@ function clearFieldFirstTime(element)
       element.value = '';
    }
 }
+$(document).ready(function(){
+  $(".div").hover(function() {
+  $( '.img-class' ).attr("src","work1");
+  }, function() {
+    alert("this is a new idea")
+  });
 });
