@@ -1,116 +1,35 @@
-$(Document).ready(function() {
+
 $(document).ready(function() {
-    $("p").click(function() {
-      $("logo.png").show();
-    });
-  });
-  $(document).ready(function() {
-    $("p").click(function() {
-      $("./img/logo.png").toggle();
-      $("/img/logo.png").toggle();
-    });
-  });
- $(document).ready(function(){
-    $("#p1").hover(function(){
-      alert("You entered p1!");
-    },
-    function(){
-      alert("Bye! You now leave p1!");
-    }); 
-  });
-  oFormObject = document.forms['myform_id'];
-  <body onload="initForm(document.forms[0], 'service_complaint', 'Please enter your complaint in brief');"></body>
-
-function initForm(oForm, element_name, init_txt)
+var des_text1 = '<img src="img/design_icon.png" alt="Snow" style="width:20%;"><br><h6>DESIGN</h6>';
+var des_text2 = '<h5>DESIGN</h5><p>Our design practice offers a full range of services including brand strategy,interaction and visual design user experience testing. Throughout your project ,our designers create and implement visual design and workflows solicit user feedback and workwith you to make sure what gets built is what is needed.</p>';
+$(document).ready(function() 
 {
-     frmElement = oForm.elements[element_name];
-      frmElement.value = init_txt;
-}
-function clearFieldFirstTime(element)
+  $("#design").click(function()
+  {
+      $(this).html($(this).html() == des_text2 ? des_text1 : des_text2);
+  });
+});
+var des_text1 = '<img src="./img/dev_icon.png" alt="Snow" style="width:20%;"><br><h5>DEVELOPMENT</h5>';
+var des_text2 = '<h5>DEVELOPMENT<h5><p>All engineers are fluent in the latest enterprise, mobile and web development technologies. They collaborate with your team to write, and improve code on a daily basis,using proven practices such as test-driven development and pair programmin.'</p>;
+$(document).ready(function() 
 {
-   if(element.counter==undefined)
-   {
-      element.counter = 1;
-   }
-   else
-   {
-      element.counter++;
-   }
+  $("#development").click(function()
+  {
+      $(this).html($(this).html() == des_text2 ? des_text1 : des_text2);
+  });
+});
+var des_text1 = '<img src="./img/product_icon.png" alt="Snow" style="width:20%;"><br><h6>DESIGN</h6>';
+var des_text2 = '<h5>PRODUCT MANAGEMENT</h5><p>Our design practice offers a full range of services including brand strategy,interaction and visual design user experience testing. Throughout your project ,our designers create and implement visual design and workflows solicit user feedback and workwith you to make sure what gets built is what is needed.</p>';
+$(document).ready(function() 
+{
+  $("#product").click(function()
+  {
+      $(this).html($(this).html() == des_text2 ? des_text1 : des_text2);
+  });
+});
 
-   if (element.counter == 1)
-   {
-      element.value = '';
-   }
-}
-$(document).ready(function(){
-  $(".div").hover(function() {
-  $( '.img-class' ).attr("src","work1");
-  }, function() {
-    display: show;
-  });
-$(document).ready(function(){
-  $(".div").hover(function() {
-  $( '.img-class' ).attr("src","work2");
-  }, function() {
-    display: show;
-  });
-$(document).ready(function(){
-(".div").hover(function() {
-$( '.img-class' ).attr("src","work3");
-}, function() {
-      display: show;
+
+
+
 });
-$(document).ready(function(){
-$(".div").hover(function() {
-$( '.img-class' ).attr("src","work4");
-}, function() {
-display: show;
-});
-$(document).ready(function(){
-$(".div").hover(function() {
-$( '.img-class' ).attr("src","work5");
-}, function() {
-display: show;
-});
-$(document).ready(function(){
-$(".div").hover(function() {
-$( '.img-class' ).attr("src","work6");
-}, function() {
-display: show;
-});
-$(document).ready(function(){
-$(".div").hover(function() {
-$( '.img-class' ).attr("src","work7");
-}, function() {
-display: show;
-});
-$(document).ready(function(){
-$(".div").hover(function() {
-$( '.img-class' ).attr("src","work8");
-}, function() {
-    display: show;
-    function register() 
- {
-     if(document.getElementById("name").value<="" || document.getElementById("name").value)
-     {
-         document.getElementById("nameerror").innerHTML = "Enter a valid name!";
-     }
-     else
-     {
-         DD = document.getElementById("name").value;
-         document.getElementById("nameerror").innerHTML = "";
- 
-         if(document.getElementById("E-mail").value<1 || document.getElementById("E-mail").value>12)
-         {
-             document.getElementById("E-mailerror").innerHTML = "Enter a valid E-mail!";
-         }
-         else
-         {
-             document.getElementById("E-mailerror").innerHTML = "";
-             document.getElementById("display").innerHTML = "";
- 
- 
-             E-mail = document.getElementById("E-mail").value();
-             comments= document.getElementById("comments").value;
-});
-})})})})})})})})});              
+
