@@ -1,107 +1,364 @@
-body {
+.header 
+{
+    position: relative;
     text-align: center;
-    font-size: larger;
     color: white;
-    text-align: center;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+  }
+ .header .centered p
+{ 
+  font-size: 12px;
 }
-img {
-    display: show;
+  .header .centered img
+  {
+    width: 75px;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .mouse_click
+  {
+    position: absolute;
+    text-align: center;
+    bottom: 25px;
+    left: 50%;
+  }
+  .mouse_click img
+  {
+  width:100%;
+  }
+
+  .about_us
+  {
+      text-align: center;
+      font-family: Arial;
   }
   
-#services {
+ .services
+ {
+     text-align: center;
+     position: relative;
+     color: #ffff;
+     font-family: arial;
+ }
+  .centered_services
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.what_we_do
+{
+text-align: center;
+}
+.what_we_do h3
+{
+ font-weight: bold;
+}
+.what_we_do img
+  {
+    width: 20%;
+  }
+
+.portfolio
+{
     text-align: center;
-    background: url("/img/s_image.jpg");
-    color: black;
-    width: 900px;
-    height: 300px;
-    margin-left: 300px;
-    padding-top: 70px;
 }
-#about {
-    color: black;
-    width: 1000px;
-    height: max-content;
-    margin-left: 260px;
+.portfolio h3
+{
+ font-weight: bold;
 }
-#welcome {
-    background: url("/img/h_img.jpg");
-    text-align: center;
+
+.portfolio img
+{
+  width: 100%;
 }
-#welcome>img {
-    width: 40px;
-    height: 30px;
+
+.portfolio .image-frame 
+{
+  position: relative;
+  
 }
-#comments {
-    background-image: url("/img/c_image.jpg");
+.portfolio .image-frame :hover
+{
+  cursor: pointer;
+}
+.portfolio .image-frame .image-caption 
+{
+	display: none;
+	position: absolute;
+  background:white;
+  padding: 5px;
+  border-radius: 5px;
+  width: 80%;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact_us
+{
+text-align: center;
+position: relative;
+color: #ffff;
+}
+.contact_us h3
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.contact_us .contact
+{
+    width: 60%;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+.contact_us .contact #form_input .form-control
+{
+  padding: 0;
+  padding-left: 8px;
+  background-color: transparent;
+  font-size: 15px;
+  border-radius: 0;
+  height: 20px;
+  color: white;
+}
+
+.contact_us .contact #form_textarea 
+{
+    width:96%;
+    margin:auto;
+}
+.contact_us .contact #form_textarea textarea
+{
+    margin: 20px auto;
+    background-color: transparent;
     color: white;
-    width: 960px;
-    height: 500px;
-    text-align: center;
-    margin-left: 270px;
+    height: 185px;
+    padding: 10px;
+    border-radius: 0px;
 }
-.container {
-    color: black;
-    display: inline-flex;
-    text-align: center;
+
+.form-control::-webkit-input-placeholder 
+{
+    color: white;
 }
-#do {
-    color: black;
+
+#footer
+{
+    margin: 25px 10px 0px;
 }
-#footer>img {
-    width: 50px;
+
+#footer img
+{
+   width: 3%;
+   margin-right:5px;
+}
+#footer p
+{
+   color: black;
+   font-size: 13px;
+}
+#design :hover
+{
+   cursor: pointer;
+}
+
+#development :hover
+{
+   cursor: pointer;
+}
+
+#p_management :hover
+{
+   cursor: pointer;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 800px) 
+{
+
+  .header .centered h1
+  { 
+    font-size: 15px;
+  }
+ .header .centered p
+{ 
+  font-size: 11px;
+}
+  .header .centered img
+  {
+    width: 59px;
+  }
+
+  .mouse_click
+  {
+    bottom: 20px;
+    left: 50%;
+  }
+  .mouse_click img
+  {
+  width:65%;
+  }
+
+  .about_us h3
+  {
+    font-size: 15px;
+  }
+  .about_us p
+  {
+    font-size: 13px;
+  }
+  .services .centered_services
+  {
+      position: absolute;
+      top: 50%;
+  }
+  .services .centered_services h3
+  {
+    font-size: 12px;
+  }
+  .services .centered_services p
+  {
+    font-size: 9px;
+  }
+  .what_we_do h3
+  {
+    font-size: 15px;
+  }
+  .what_we_do img
+  {
+    width: 15%;
+  }
+  .what_we_do h6
+  {
+    font-size: 13px;
+  }
+  .what_we_do h5
+  {
+    font-size: 14px;
+  }
+  .what_we_do p
+  {
+    font-size: 13px;
+  }
+
+  .portfolio img
+  {
+    margin-top: 5px;
+  }
+  .portfolio h3
+  {
+   font-size: 15px;
+  }
+
+  .portfolio .image-frame .image-caption 
+{
+  padding: 5px;
+  border-radius: 5px;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+}
+
+.contact_us h3
+{
+  font-size: 15px;
+  padding-bottom: 15px;
+}
+.contact_us .form-control
+{
+  height:20%;
+  font-size: 12px;
+}
+
+.contact_us .contact textarea
+{
+    height: 100px;
+}
+
+.contact_us .contact
+{
+    width: 80%;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.contact_us .contact #form_input .form-control
+{
+  font-size: 12px;
+  height: 20px;
+}
+
+.contact_us .contact #form_textarea textarea
+{
+    margin: 15px auto;
+    height: 100px;
+}
+
+
+
+
+}
+
+@media screen and (max-width: 530px) 
+{
+  .portfolio img
+  {
+    width: 90%;
+  }
+  .contact_us h3
+  {
+    font-size: 15px;
+    padding-bottom: 0px;
+  }
+  .contact_us .contact
+{
+    width: 60%;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.contact_us .form-control
+{
+  margin-top: 3px;
+  height:20%;
+  font-size: 12px;
+}
+
+.contact_us .contact
+{
+    width: 80%;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+.contact_us .contact #form_input .form-control
+{
+  font-size: 10px;
+  height: 10px;
+}
+
+.contact_us .contact #form_textarea textarea
+{
+    padding:0px;
+    margin: 2px auto;
     height: 50px;
 }
-/* .design {
-    color: black;
-    width: 1000px;
-    height: max-content;
-    margin-left: 260px;
-} */
-.container>img {
-width: 50px;
-height: 50px;
-}
-/* .container {
-    margin: 0%;
-    display: inline-flex;
-    flex-direction: column;
-} */
-.click1 {
-    width: 50px;
-    height: 50px;
-}
-.hide1 {
-    width: 400px;
-    height: 350px;
-    margin: 0%;
-}
-.hide1>img {
-    width: 50px;
-    height: 50px;
-}
-.click2 {
-    width: 50px;
-    height: 50px;
-}
-.hide2 {
-    width: 400px;
-    height: 350px;
-    margin: 0%;
-}
-.hide2>img {
-    width: 50px;
-    height: 50px;
-}
-.click3 {
-    width: 50px;
-    height: 50px;
-}
-.hide3 {
-    width: 400px;
-    height: 350px;
-    margin: 0%;
-}
-.hide3>img {
-    width: 50px;
-    height: 50px;
+ 
 }
