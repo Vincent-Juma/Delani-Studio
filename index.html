@@ -7,7 +7,7 @@
 
   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delani  Virtual Studio</title>
   </head>
@@ -24,7 +24,7 @@
             <p>AMAZING PEOPLE ARE MAKING AMAZING DESIGNS IN A FUN ENVIRONMENT</p> 
         </div>
         <div class="mouse_click">
-            <img src="assets/mouse_click.png" alt="Snow">
+            <img src="assets/mouse_click.png" alt="Show">
         </div>
 
       </div>
@@ -39,7 +39,7 @@
       </div>
 
       <div class="services mt-5">
-        <img src="assets/backgrounds/s_image.jpg" alt="Snow" style="width:100%;">
+        <img src="assets/backgrounds/s_image.jpg" alt="Show" style="width:100%;">
         <div class="centered_services">
             <h3><strong>SERVICES</strong></h3>
             <p class="mt-3">Before we sign a contract or write a line of code, our team will spend the necessay time needed to understand our product vision</p>            
@@ -53,15 +53,15 @@
             <h3 class="mt-5">WHAT WE DO</h3>
             <div class="row" >
               <div class="col-sm mt-5" id="design">
-                <img src="assets/services_icons/design_icon.png" alt="Snow" ><br>
+                <img src="assets/services_icons/design_icon.png" alt="Show" ><br>
                 <h6>DESIGN</h6>
               </div>
               <div class="col-sm mt-5" id="development">
-                <img src="assets/services_icons/dev_icon.png" alt="Snow" ><br>
+                <img src="assets/services_icons/dev_icon.png" alt="Show" ><br>
                 <h6>DEVELOPMENT</h6>
               </div>
               <div class="col-sm mt-5" id="p_management">
-                <img src="assets/services_icons/product_icon.png" alt="Snow"><br>
+                <img src="assets/services_icons/product_icon.png" alt="Show"><br>
                 <h6>PRODUCT MANAGEMENT</h6>
               </div>
             </div>
@@ -161,7 +161,7 @@
         Vincent Juma,  we have received your message.Thank you for reaching out to us.
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">dismiss</button>
       </div>
     </div>
   </div>
@@ -173,34 +173,34 @@
 
 <script>    
 // SERVICES SCRIPT
-      var des_text1 = '<img src="assets/services_icons/design_icon.png" alt="Snow" style="width:20%;"><br><h6>DESIGN</h6>';
+      var des_img = '<img src="assets/services_icons/design_icon.png" alt="Snow" style="width:20%;"><br><h6>DESIGN</h6>';
       var des_text2 = '<h5>DESIGN</h5><p>Our design practise offers a full range of services including brand strategy, interaction and visual design and user experience testing. Throughout your project ,our designers create and implement visual design and workflows solicit user feedback and work with you to make sure what gets built is what is needed.</p>';
     $(document).ready(function()
      {
         $("#design").click(function()
         {
-            $(this).html($(this).html() == des_text2 ? des_text1 : des_text2);
+            $(this).html($(this).html() == des_text2 ? des_img : des_text2);
         });
     });
 
-    var dev_text1 = '<img src="assets/services_icons/dev_icon.png" alt="Snow" style="width:20%;"><br><h6>DEVELOPMENT</h6>';
+    var dev_img = '<img src="assets/services_icons/dev_icon.png" alt="Snow" style="width:20%;"><br><h6>DEVELOPMENT</h6>';
       var dev_text2 = '<h5>DEVELOPMENT</h5><p>All engineers are fluent in the latest enterprise, mobile and web development technologies. They colaborate with your team to write, and improve code on a daily basis using proven practices such as test-driven development and pair programming.</p>';
     $(document).ready(function()
      {
         $("#development").click(function()
         {
-            $(this).html($(this).html() == dev_text2 ? dev_text1 : dev_text2);
+            $(this).html($(this).html() == dev_text2 ? dev_img : dev_text2);
         });
     });
 
 
-    var p_text1 = '<img src="assets/services_icons/product_icon.png" alt="Snow" style="width:20%;"><br><h6>PRODUCT MANAGEMENT</h6>';
+    var p_img = '<img src="assets/services_icons/product_icon.png" alt="Snow" style="width:20%;"><br><h6>PRODUCT MANAGEMENT</h6>';
       var p_text2 = '<h5>PRODUCT MANAGEMENT</h5><p>Planning and development is iterative. Because we constantly coding and testing, the products we build are always ready to go live. This iterative process allows for changes as business requirements evolve.</p>';
     $(document).ready(function()
      {
         $("#p_management").click(function()
         {
-            $(this).html($(this).html() == p_text2 ? p_text1 : p_text2);
+            $(this).html($(this).html() == p_text2 ? p_img : p_text2);
         });
     });
 // END OF SERVICES SCRIPT
